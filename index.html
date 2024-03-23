@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="unselectable">
+    <div class="container"> 
+    <div class="flex-container">
+        <div class="sectionallleft">
+            <div class="backgroundallleft">
+
+            
+                <img src="./wood-log.png" alt="" class="wood-log5">
+                <img src="./wood-log.png" alt="" class="wood-log6">
+                <img src="./wood-log.png" alt="" class="wood-log7">
+                <img src="./wood-log.png" alt="" class="wood-log8">
+            </div>
+            <div class="popup" >
+                <img src="./stone-cursor.png" alt="" width="50px" height="50px" onmouseenter="popup()" onmouseleave="popup()" onclick="stonecursor()">
+                <p class="popuptext">clicking is TWICE as efficient Cost:100 Daniel</p>
+            </div>
+            <div class="popup2" >
+                <img src="./syringe.png" alt="" width="50px" height="50px" onmouseenter="popup2()" onmouseleave="popup2()" onclick="syringe()">
+                <p class="popuptext2">Mad Scientists are TWICE as efficient Cost:200 Daniel</p>
+            </div>
+        </div>
+    <div class="sectionLeft">
+        <center>
+            <img src="./cursor.png" alt="" class="cursorimg">
+            <div class="scoreContainer unselectable">
+                <span id="score">0</span> Daniel <br>
+                <span id="scorepersecond">0</span> Daniel per second
+                
+            </div>
+            <br>
+            <div class="clickerContainer unselectable">
+                <div id="moneyAnimation" onclick="addOne();">
+                    
+                    <img src="./Daniel1.png" alt="" height="340px" width="256px" onclick="addToScore(clickingPower)" id="clicker" >
+                    
+                </div>
+                
+            </div>
+        </center>
+
+        <div class="sectionfooter">
+            <h5>Daniel Clicker</h5>
+        </div>
+    </div>
+
+    <div class="sectionRight">
+        <img src="./wood-log.png" alt="" class="wood-log">
+        <img src="./wood-log.png" alt="" class="wood-log2">
+        <img src="./wood-log.png" alt="" class="wood-log3">
+        <img src="./wood-log.png" alt="" class="wood-log4">
+        <div id="upgradeContainer"></div>
+        <div id="shopContainer"></div>
+        <table class="shopbutton" onclick="buycursor()">
+            <tr>
+                <td id="image1"><img src="cursor.png" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>cursor</p>
+                    <p><span id="cursorcost">15</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="cursors">0</span></td>
+            </tr>
+        </table>
+
+
+        <table class="shopbutton" onclick="buyscientist()">
+            <tr>
+                <td id="image"><img src="scientist.jpg" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>Mad Scientist</p>
+                    <p><span id="scientistcost">100</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="scientists">0</span></td>
+            </tr>
+        </table>
+
+        <!-- daniel-parents -->
+        <table class="shopbutton" onclick="buyparent()">
+            <tr>
+                <td id="image"><img src="./Daniel-parent.png" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>Daniel's parents</p>
+                    <p><span id="parentcost">1100</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="parents">0</span></td>
+            </tr>
+        </table>
+        <!-- unknown -->
+        <!-- unknown -->
+        <table class="shopbutton" onclick="buyunknown()">
+            <tr>
+                <td id="image"><img src="./silouhette.jpg" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>???</p>
+                    <p><span id="unknowncost">???</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="unknowns">0</span></td>
+            </tr>
+        </table>
+        <table class="shopbutton" onclick="buyunknown()">
+            <tr>
+                <td id="image"><img src="./silouhette.jpg" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>???</p>
+                    <p><span id="unknowncost">???</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="unknowns">0</span></td>
+            </tr>
+        </table>
+        <table class="shopbutton" onclick="buyunknown()">
+            <tr>
+                <td id="image"><img src="./silouhette.jpg" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>???</p>
+                    <p><span id="unknowncost">???</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="unknowns">0</span></td>
+            </tr>
+        </table>
+        <table class="shopbutton" onclick="buyunknown()">
+            <tr>
+                <td id="image"><img src="./silouhette.jpg" height="70px" width="50px"></td>
+                <td id="nameAndCost">
+                    <p>???</p>
+                    <p><span id="unknowncost">???</span>  Daniel</p>
+                </td>
+                <td id="amount"><span id="unknowns">0</span></td>
+            </tr>
+        </table>
+
+
+
+
+
+        <!-- <button onclick="buycursor()">Cursor [<span id="cursorcost">15</span>]--<span id="cursors">0</span></button>
+        <button onclick="buyscientist()">Mad Scientist [<span id="scientistcost">100</span>]--<span id="scientists">0</span></button> -->
+        </div>
+    </div>
+    </div>
+    <div class="wholescreen"></div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

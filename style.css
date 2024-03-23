@@ -1,0 +1,393 @@
+body{
+    background-color: #c4dfff;
+    background-image:url(./planks.jpg)
+}
+
+
+#clicker:active{
+    transform: scale(0.9);  
+}
+
+#clicker{
+    transition: 0.2s;
+}
+
+.sectionLeft{
+    float: left;
+    width: 80%;
+}
+
+.sectionRight{
+    float: right;
+    width: 20%;
+}
+
+.scoreContainer{
+    background-color: rgb(127, 212, 255);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.clickerContainer img{
+    position:relative;
+
+}
+
+.clickerContainer:hover{
+    transform: scale(1.1);
+
+}
+
+.clickerContainer{
+    transition: 0.2s;
+    margin-left: 100px;
+}
+
+.shopbutton{
+    background-color:#b5b5b5 ;
+    transition: all 0.2s;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+
+
+}
+
+.shopbutton:hover{
+    background-color: #c7c7c7;
+    transition: all 0.2s;
+
+}
+
+.wood-log{
+    position: absolute;
+    right: 350px;
+    top: 0px;
+    width: 50px;
+}
+
+.wood-log2{
+    position: absolute;
+    right: 350px;
+    top: 198px;
+    width: 50px;
+
+}
+.wood-log3{
+    position: absolute;
+    right: 350px;
+    top: 396px;
+    width: 50px;
+
+}
+
+
+.wood-log4{
+    position: absolute;
+    right: 350px;
+    top: 593px;
+    width: 50px;
+
+}
+
+.wood-log5{
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    width: 50px;
+    z-index: -1;
+}
+
+.wood-log6{
+    position: absolute;
+    left: 250px;
+    top: 198px;
+    width: 50px;
+
+}
+
+.wood-log7{
+    position: absolute;
+    left: 250px;
+    top: 396px;
+    width: 50px;
+
+}
+
+.wood-log8{
+    position: absolute;
+    left: 250px;
+    top: 593px;
+    width: 50px;
+
+}
+
+.shopbutton #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+    
+
+}
+
+.shopbutton #nameAndCost p:first-of-type{
+    font-size: 24px;
+
+}
+
+.shopbutton #amount {
+    font-size: 48px;
+    color:#595959;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 15%;
+}
+
+.unselectable{
+    user-select:none ;
+}
+
+.sectionfooter{
+    margin-top: 20%;
+    
+}
+
+.cursorimg{
+    position: absolute;
+    top: 30vh;
+    left: 100vh;
+    height: 30px;
+    width: 25px;
+    transform: rotate(270deg);
+
+    animation-duration: 0.5s;
+    animation-name: cursorimg;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes cursorimg {
+    from {
+        left: 48%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+#upgradeContainer img{
+    height: 64px;
+    width: 64px;
+}
+
+.flex-container{
+    display:flex
+}
+
+
+
+
+/* popup */
+
+.popup{
+    position: absolute;
+    /* margin-top: 80px; */
+    top: 80px;
+}
+
+.popup img{
+    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background-color: #aeaeae;
+    border-radius: 5px;
+}
+
+.popuptext {
+    visibility:hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: -5;
+    margin-left: 50px;
+    margin-top: -80px;
+  }
+
+  .show{
+    visibility: visible;
+  }
+
+
+  .popup .popuptext::after  {
+    
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 97%;
+    margin-right: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent #555 transparent transparent;
+  }
+
+  /*popup2*/
+
+
+  .popup2{
+    position: absolute;
+    /* margin-top: 80px; */
+    top: 180px;
+
+}
+
+
+.popup2 img{
+    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background-color: #aeaeae;
+    border-radius: 5px;
+}
+
+.popuptext2 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: -5;
+    margin-left: 50px;
+    margin-top: -80px;
+  }
+
+  .show2{
+    visibility: visible;
+  }
+
+
+  .popup2 .popuptext2::after  {
+    
+    content: "";
+    visibility: visible;
+    position: absolute;
+    top: 40%;
+    right: 97%;
+    margin-right: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent #555 transparent transparent;
+  }
+
+
+  /* snowflakes */
+
+  .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+button:active{
+    background-color: black;
+}
+
+.snowflakes{
+    width: 30px;
+    height: 40px;
+    /* background-color: aqua; */
+    position: absolute;
+    /* display: none; */
+    /* border-radius: 50%; */
+    background-position: center;
+    background-size: cover;
+    background-image: url(./Daniel1.png);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background: url(./plain-black-background-ozgsjzlrpwaioxps.jpg);
+
+}
+
+/* .container img{
+    transform: scale(-1);
+    position: relative;
+    top: 150px;
+    left: -50px;
+} */
+
+
+
+/* test*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+  
+  #moneyAnimation {
+    height: 100px;
+    width: 300px;
+  }
+
+  .moneyAnimation{
+    margin-top: 250px;
+    margin-left: 100px;
+    color: gold;
+  }
+  
+  @keyframes moneyAnimation {
+    0% {
+      opacity: 1;
+      top: 0;
+    }
+    100% {
+      opacity: 0;
+      top: -50px;
+    }
+  }
+  
+  .moneyAnimation {
+    animation: moneyAnimation 1s forwards;
+    position: absolute;
+  }
+
+  .wholescreen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: #fff; 
+    display: none;
+    left: 0px;
+  }
+
+#image1{
+
+}
+
+
+  
+
